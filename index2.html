@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ingresar a Artes Artes_JYC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="user-box">
+          <input type="text" name="username" required />
+          <label>User name</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" required />
+          <label>Password</label>
+        </div>
+        <button type="submit" class="login-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Login
+        </button>
+        <a href="index2.html" id="registerLink">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Registrarse
+        </a>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Login successful! Redirecting...');
+        window.location.href = 'index3.HTML'; // Redirigir a la página inicial
+      });
+    </script>
+  </body>
+</html>
+

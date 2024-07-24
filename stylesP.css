@@ -1,0 +1,118 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background: linear-gradient(45deg,#ff0534,#ffa300 50%,#13a8fe 50%); /* Fondo con degradado */
+    background-size: cover; /* Ajusta el tamaño del fondo */
+    padding-top: 100px; /* Relleno superior */
+    }
+    
+    /* Estilos para el encabezado */
+    header {
+    font-family: Arial, sans-serif; /* Fuente de texto */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background: linear-gradient(45deg, #77dd77 60%, #FFFFFF 40%); /* Fondo con degradado */
+    position: fixed; /* Posiciona el encabezado de manera fija */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Posiciona en la parte superior */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    }
+    
+    /* Estilos para la galería de imágenes */
+    .image-gallery {
+    display: flex; /* Utiliza flexbox para la alineación */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 10px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-top: 20px; /* Margen superior */
+    }
+    
+    .gallery-image {
+    width: 150px; /* Ancho de las imágenes */
+    height: 150px; /* Altura de las imágenes */
+    object-fit: cover; /* Ajusta las imágenes para cubrir el contenedor */
+    }
+    
+    /* Estilos para el contenedor del encabezado */
+    header .container {
+    display: flex; /* Utiliza flexbox para la alineación */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    max-width: 1500px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 70px; /* Relleno interno */
+    }
+    
+    /* Estilos para los enlaces de navegación en el encabezado */
+    header nav a {
+    color: rgb(245, 8, 8); /* Color del texto */
+    margin: 0 15px; /* Margen horizontal */
+    text-decoration: none; /* Sin subrayado */
+    }
+    
+    /* Estilos para el logo en el encabezado */
+    header .logo img {
+    height: 100px; /* Altura del logo */
+    }
+    
+    /* Estilos para el contenedor principal */
+    .container {
+    max-width: 1200px; /* Ancho máximo */
+    margin: 20px auto 0; /* Margen superior y centrado horizontal */
+    padding: 20px; /* Relleno interno */
+    }
+    
+    /* Estilos para el contenido */
+    .content {
+    display: flex; /* Utiliza flexbox para la alineación */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: space-around; /* Espacio entre los elementos */
+    }
+    
+    /* Estilos para la sección principal */
+    .main {
+    display: flex; /* Utiliza flexbox para la alineación */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    margin-top: 20px; /* Margen superior */
+    }
+    
+    /* Estilos para las secciones */
+    .section {
+    flex: 1; /* Permite que las secciones crezcan */
+    padding: 20px; /* Relleno interno */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
+    background-color: white; /* Color de fondo */
+    margin: 20px; /* Margen */
+    width: 45%; /* Ancho */
+    box-shadow: 0 0 10px rgba(9, 206, 26, 0.1); /* Sombra */
+    }
+    
+    /* Estilos para los títulos de las secciones */
+    .section h2 { 
+    color: #c70000; /* Color del texto */
+    }
+    
+    /* Estilos para los párrafos y listas en las secciones */
+    .section p, .section ul {
+    color: #000000; /* Color del texto */
+    }
+    
+    /* Estilos para el pie de página */
+    footer {
+    width: 100%; /* Ancho completo */
+    background: linear-gradient(-45deg,#1eff05 60%, #FFFFFF 40%); /* Fondo con degradado */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 10px 0; /* Relleno interno */
+    bottom: 0; /* Posiciona en la parte inferior */
+    position: relative; /* Posicionamiento relativo */
+    }
+    
+    /* Estilos para los iconos de redes sociales */
+    .icon {  
+    width: 35px; /* Ancho de los iconos */
+    height: 35px; /* Altura de los iconos */
+    margin: 0 10px; /* Margen horizontal */
+    }

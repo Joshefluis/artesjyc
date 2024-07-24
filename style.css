@@ -1,0 +1,202 @@
+/* Estilos generales para el HTML */
+html {
+  height: 100%; /* Establece la altura del HTML al 100% */
+  }
+  
+  /* Estilos generales para el cuerpo de la página */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle,#c501e2, #84b6f4, #a3ffac,#ff0534, #ff85d5, #FFD700,#52fd00, #ff6961, #b8e4ff,#01c4e7);
+      background-size: cover;
+      padding-top: 100px;
+      }
+  
+  /* Estilos para la caja de login */
+  .login-box {
+  position: absolute; /* Posiciona la caja de manera absoluta */
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  width: 400px; /* Ancho de la caja */
+  padding: 40px; /* Relleno interno */
+  transform: translate(-50%, -50%); /* Ajusta la posición para centrar */
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); /* Sombra de la caja */
+  border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  /* Estilos para el título dentro de la caja de login */
+  .login-box h2 {
+  margin: 0 0 30px; /* Margen inferior */
+  padding: 0; /* Sin relleno */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Alineación del texto al centro */
+  }
+  
+  /* Estilos para la caja de usuario dentro de la caja de login */
+  .login-box .user-box {
+  position: relative; /* Posicionamiento relativo */
+  }
+  
+  /* Estilos para los campos de entrada dentro de la caja de usuario */
+  .login-box .user-box input {
+  width: 100%; /* Ancho completo */
+  padding: 10px 0; /* Relleno interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #fff; /* Color del texto */
+  margin-bottom: 30px; /* Margen inferior */
+  border: none; /* Sin borde */
+  border-bottom: 1px solid #fff; /* Borde inferior */
+  outline: none; /* Sin contorno */
+  background: transparent; /* Fondo transparente */
+  }
+  
+  /* Estilos para las etiquetas dentro de la caja de usuario */
+  .login-box .user-box label {
+  position: absolute; /* Posicionamiento absoluto */
+  top: 0; /* Posición superior */
+  left: 0; /* Posición izquierda */
+  padding: 10px 0; /* Relleno interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #fff; /* Color del texto */
+  pointer-events: none; /* Desactiva los eventos del puntero */
+  transition: 0.5s; /* Transición suave */
+  }
+  
+  /* Estilos para las etiquetas cuando el campo de entrada está enfocado o válido */
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+  top: -20px; /* Mueve la etiqueta hacia arriba */
+  left: 0; /* Mantiene la posición izquierda */
+  color: #03e9f4; /* Cambia el color del texto */
+  font-size: 12px; /* Reduce el tamaño de la fuente */
+  }
+  
+  /* Estilos para los enlaces y botones dentro del formulario */
+  .login-box form a,
+  .login-box form .login-btn,
+  .login-box form .register-btn {
+  position: relative; /* Posicionamiento relativo */
+  display: inline-block; /* Elemento en línea */
+  padding: 10px 20px; /* Relleno interno */
+  color: #03e9f4; /* Color del texto */
+  font-size: 16px; /* Tamaño de la fuente */
+  text-decoration: none; /* Sin subrayado */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  overflow: hidden; /* Oculta el desbordamiento */
+  transition: 0.5s; /* Transición suave */
+  margin-top: 40px; /* Margen superior */
+  letter-spacing: 4px; /* Espaciado entre letras */
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor de puntero */
+  }
+  
+  /* Estilos para los enlaces y botones al pasar el ratón */
+  .login-box a:hover,
+  .login-box .login-btn:hover,
+  .login-box .register-btn:hover {
+  background: #03e9f4; /* Fondo azul */
+  color: #fff; /* Color del texto blanco */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4; /* Sombra */
+  }
+  
+  /* Estilos para los spans dentro de los enlaces y botones */
+  .login-box a span,
+  .login-box .login-btn span,
+  .login-box .register-btn span {
+  position: absolute; /* Posicionamiento absoluto */
+  display: block; /* Elemento de bloque */
+  }
+  
+  /* Animaciones para los spans */
+  .login-box a span:nth-child(1),
+  .login-box .login-btn span:nth-child(1),
+  .login-box .register-btn span:nth-child(1) {
+  top: 0; /* Posición superior */
+  left: -100%; /* Posición izquierda fuera de la vista */
+  width: 100%; /* Ancho completo */
+  height: 2px; /* Altura */
+  background: linear-gradient(90deg, transparent, #03e9f4); /* Fondo con degradado */
+  animation: btn-anim1 1s linear infinite; /* Animación */
+  }
+  
+  @keyframes btn-anim1 {
+  0% {
+  left: -100%; /* Inicio de la animación */
+  }
+  50%,
+  100% {
+  left: 100%; /* Fin de la animación */
+  }
+  }
+  
+  .login-box a span:nth-child(2),
+  .login-box .login-btn span:nth-child(2),
+  .login-box .register-btn span:nth-child(2) {
+  top: -100%; /* Posición superior fuera de la vista */
+  right: 0; /* Posición derecha */
+  width: 2px; /* Ancho */
+  height: 100%; /* Altura completa */
+  background: linear-gradient(180deg, transparent, #03e9f4); /* Fondo con degradado */
+  animation: btn-anim2 1s linear infinite; /* Animación */
+  animation-delay: 0.25s; /* Retraso en la animación */
+  }
+  
+  @keyframes btn-anim2 {
+  0% {
+  top: -100%; /* Inicio de la animación */
+  }
+  50%,
+  100% {
+  top: 100%; /* Fin de la animación */
+  }
+  }
+  
+  .login-box a span:nth-child(3),
+  .login-box .login-btn span:nth-child(3),
+  .login-box .register-btn span:nth-child(3) {
+  bottom: 0; /* Posición inferior */
+  right: -100%; /* Posición derecha fuera de la vista */
+  width: 100%; /* Ancho completo */
+  height: 2px; /* Altura */
+  background: linear-gradient(270deg, transparent, #03e9f4); /* Fondo con degradado */
+  animation: btn-anim3 1s linear infinite; /* Animación */
+  animation-delay: 0.5s; /* Retraso en la animación */
+  }
+  
+  @keyframes btn-anim3 {
+  0% {
+  right: -100%; /* Inicio de la animación */
+  }
+  50%,
+  100% {
+  right: 100%; /* Fin de la animación */
+  }
+  }
+  
+  .login-box a span:nth-child(4),
+  .login-box .login-btn span:nth-child(4),
+  .login-box .register-btn span:nth-child(4) {
+  bottom: -100%; /* Posición inferior fuera de la vista */
+  left: 0; /* Posición izquierda */
+  width: 2px; /* Ancho */
+  height: 100%; /* Altura completa */
+  background: linear-gradient(360deg, transparent, #03e9f4); /* Fondo con degradado */
+  animation: btn-anim4 1s linear infinite; /* Animación */
+  animation-delay: 0.75s; /* Retraso en la animación */
+  }
+  
+  @keyframes btn-anim4 {
+  0% {
+  bottom: -100%; /* Inicio de la animación */
+  }
+  50%,
+  100% {
+  bottom: 100%; /* Fin de la animación */
+  }
+  }
